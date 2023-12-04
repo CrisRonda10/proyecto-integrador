@@ -1,5 +1,5 @@
 html{
-  background: #ddd;
+  background: linear-gradient(135deg,  rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%); 
   height: 100%;
   display: flex;
 }
@@ -9,7 +9,51 @@ body{
   margin: auto;
 }
 
-.App{
+.App2{
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+.container{
+  padding: 10px;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.todo-list{
+  margin-top: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.button-agregar{
+  background-color: green;
+  color: white;
+  margin-left: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-agregar[disabled]{
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.button-borrar{
+  background-color: red;
+  color: white;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
